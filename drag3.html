@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style type="text/css">
+        #div1, #div2,#div0
+        {float:left; width:350px; height:250px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+    </style>
+    <script type="text/javascript">
+            //拖拽结束
+            function allowDrop(ev)
+            {
+                ev.preventDefault();
+            }
+            //拖动开始
+            var data;
+            function drag(ev)
+            {
+                data=document.createElement('img');
+                var route=ev.target.getAttribute("src");
+                data.setAttribute('src',route);
+            }
+            //放置
+            function drop(ev)
+            {
+                ev.preventDefault();
+                var j=0;
+                var div2Ele=[];
+                var div2=document.getElementById('div2');
+                var div2Child=div2.childNodes;
+                for(var i=0;i<div2Child.length;i++){
+                    div2Ele[j]=div2Child[i];
+                    j+=1;
+                    if(j>=1){
+                        div2.removeChild(div2Ele[0]);
+                    };
+                }
+                div2.appendChild(data);
+            }
+    </script>
+</head>
+<body>
+<div id="div0" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/placeholder.gif" draggable="true" ondragstart="drag(event)" id="drag0" />
+</div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="images/logo.gif" draggable="true" ondragstart="drag(event)" id="drag1" />
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</html>
