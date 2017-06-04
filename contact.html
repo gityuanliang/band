@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay Skript and the Domsters</title>
+    <link rel="icon" href="images/basshead.gif"/>
+    <link rel="stylesheet" href="scss/stylesheets/basic.css"/>
+    <script src="js/modernizr-1.6.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <!--头部轮播和导航-->
+    <header>
+        <div id="banner" class="contactBanner">
+            <img src="images/logo.gif" alt=""/>
+            <div></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li class="here"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content">
+        <div>
+            <article>
+                <h3>Contact the band</h3>
+                <form id="mes" action="submit.html" method="post">
+                <fieldset>
+                    <p>
+                        <lable for="name">name:</lable>
+                        <br/>
+                        <input name="name" id="name" placeholder="Your name" type="text" required="required"/>
+                    </p>
+
+                    <p>
+                        <lable for="email">Email:</lable>
+                        <br/>
+                        <input name="email" id="email" placeholder="Your email address" type="email" required="required"/>
+                    </p>
+
+                    <p>
+                        <lable for="message">Message:</lable>
+                        <br/>
+                        <textarea name="message" id="message" cols="45" rows="7" placeholder="Write your message here" required="required"></textarea>
+                    </p>
+                    <input type="submit" value="send"/>
+                </fieldset>
+            </form>
+            </article>
+        </div>
+
+    </section>
+    <footer>
+        京ICP备16067068号
+    </footer>
+</div>
+</body>
+</html>
+<script src="js/global.js"></script>

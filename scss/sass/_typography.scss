@@ -1,0 +1,183 @@
+@charset "UTF-8";
+$width:100%;
+$box-style:border-box;
+$line-height20:20px;
+$line-height30:30px;
+$textDecoration:none;
+.lh20{
+  line-height: $line-height20;
+}
+.lh30{
+  line-height: $line-height30;
+}
+/*顶部背景图*/
+body{
+  background:url("../../images/background.gif") repeat-x;
+  background-color: #333344;
+}
+/*版心*/
+#container{
+  width: 90%;
+  margin: 0 auto;
+}
+/*顶部logo*/
+#banner {
+  width: $width;
+  background-color: #343445;
+  background-position: bottom right;
+}
+.homeBanner{
+  background: url("../../images/guitarist.gif") no-repeat;
+}
+.aboutBanner{
+  background: url("../../images/lineup.gif") no-repeat;
+}
+.photosBanner{
+  background: url("../../images/basshead.gif") no-repeat;
+}
+.liveBanner{
+  background:url("../../images/bassist.gif") no-repeat;
+}
+.contactBanner{
+  background:url("../../images/drummer.gif")no-repeat;
+}
+/*导航菜单*/
+#nav ul {
+  width: $width;
+  overflow: hidden;
+  background-color: #888888;
+  opacity: 0.8;
+  box-sizing: $box-style;
+  li {
+    list-style: none;
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 100px;
+    line-height: 30px;
+    height: 30px;
+    border-right: solid 1px #ccc;
+    &:hover{
+      background-color: #fb5;
+    }
+    a {
+      color: #ffffff;
+    }
+    &.here{
+      background-color: #799;
+    }
+  }
+  li:nth-child(1) {
+    margin-left: 50px;
+    border-left: solid 1px #cccccc;
+  }
+}
+/*主体内容*/
+#content >div{
+  width: $width;
+  background-color: #eeddcc;
+  padding-left: 50px;
+  box-sizing: $box-style;
+  h3{
+    font-size: 40px;
+    line-height: 80px;
+    height: 80px;
+  }
+  .txt{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    span{
+      a{
+        background-color: #eb6;
+      }
+    }
+  }
+  #slideShow{
+    @include border-radius(5px);
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+}
+footer{
+  padding-top: 10px;
+  width: $width;
+  margin: 0 auto;
+  text-align: center;
+}
+/*about*/
+#members {
+  ul{
+    li{
+      list-style-type:disc ;
+      a{
+        color: #ffbe74;
+        text-decoration: none;
+      }
+    }
+  }
+}
+/*photos*/
+#name {
+  ul{
+    overflow: hidden;
+    li{
+      float: left;
+      margin-right: 2px;
+    }
+  }
+  p{
+    line-height:$line-height30 ;
+    height: 30px;
+  }
+  img{
+    display: block;
+    border: solid 1px #cccccc;
+  }
+  #placeholder{
+    display: block;
+    width: 400px;
+    height: 300px;
+    border: solid 1px #cccccc;
+  }
+}
+/*live*/
+#schedule{
+  tr{
+    height: 20px;
+    width: 450px;
+    background-color: #ffbe74;
+    &:nth-child(2n){
+      background-color: #eea927;
+    }
+    th{
+      color: #ffffff;
+      width: 150px;
+      background-color: #605f46;
+      text-align: center;
+      border: solid 2px #edc;
+      font-size: 16px;
+      text-overflow:ellipsis;
+    }
+    td{
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      border: solid 2px #edc;
+      width: 150px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      &:hover{
+        background-color: rgba(red,0.5);
+      }
+    }
+
+  }
+  .mouseoverColor{
+    background-color: rgba(23,24,25,0.1)!important;
+  }
+}

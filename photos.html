@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jay Skript and the Domsters</title>
+    <link rel="icon" href="images/basshead.gif"/>
+    <link rel="stylesheet" href="scss/stylesheets/basic.css"/>
+    <script src="js/modernizr-1.6.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <!--头部轮播和导航-->
+    <header>
+        <div id="banner" class="photosBanner">
+            <img src="images/logo.gif" alt=""/>
+            <div></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li class="here"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="live.html">Live</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="content">
+        <div id="name">
+            <h3>Photos of the band</h3>
+            <ul>
+                <li class="here"><a href="javascript:void(0)"><img draggable="true" ondragstart="drag(event)" title="bsssist" src="images/thumbnail_bassist.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img draggable="true" ondragstart="drag(event)" title="concert" src="images/thumbnail_concert.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img draggable="true" ondragstart="drag(event)" title="crowd" src="images/thumbnail_crowd.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img draggable="true" ondragstart="drag(event)" title="guitarist" src="images/thumbnail_guitarist.jpg" alt=""/></a></li>
+            </ul>
+            <p id="description">Choose an image</p>
+            <img ondrop="drop(event)" ondragover="allowDrop(event)" id="placeholder" src="images/placeholder.gif" alt="my image gallery">
+        </div>
+    </section>
+    <footer>
+        京ICP备16067068号
+    </footer>
+</div>
+</body>
+</html>
+<script src="js/global.js"></script>

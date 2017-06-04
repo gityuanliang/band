@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>脚本之家</title>
+    <script type="text/javascript">
+        window.onload=function(){
+            function sort(arr){
+                for (var i = 0; i <arr.length; i++) {
+                    for (var j = 0; j <arr.length-i; j++) {
+                        if(arr[j]>arr[j+1]){
+                            var c=arr[j];//交换两个变量的位置
+                            arr[j]=arr[j+1];
+                            arr[j+1]=c;
+                        }
+                    };
+                };
+                return arr.toString();
+            }
+            console.log(sort([23,45,18,37,92,13,24]));
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li>Item</li>
+    <li></li>
+    <li></li>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "normalize";*/
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/_typography.scss */
+.lh20 {
+  line-height: 20px;
+}
+
+/* line 10, ../sass/_typography.scss */
+.lh30 {
+  line-height: 30px;
+}
+
+/*顶部背景图*/
+/* line 14, ../sass/_typography.scss */
+body {
+  background: url("../../images/background.gif") repeat-x;
+  background-color: #333344;
+}
+
+/*版心*/
+/* line 19, ../sass/_typography.scss */
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*顶部logo*/
+/* line 24, ../sass/_typography.scss */
+#banner {
+  width: 100%;
+  background-color: #343445;
+  background-position: bottom right;
+}
+
+/* line 29, ../sass/_typography.scss */
+.homeBanner {
+  background: url("../../images/guitarist.gif") no-repeat;
+}
+
+/* line 32, ../sass/_typography.scss */
+.aboutBanner {
+  background: url("../../images/lineup.gif") no-repeat;
+}
+
+/* line 35, ../sass/_typography.scss */
+.photosBanner {
+  background: url("../../images/basshead.gif") no-repeat;
+}
+
+/* line 38, ../sass/_typography.scss */
+.liveBanner {
+  background: url("../../images/bassist.gif") no-repeat;
+}
+
+/* line 41, ../sass/_typography.scss */
+.contactBanner {
+  background: url("../../images/drummer.gif") no-repeat;
+}
+
+/*导航菜单*/
+/* line 45, ../sass/_typography.scss */
+#nav ul {
+  width: 100%;
+  overflow: hidden;
+  background-color: #888888;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+/* line 51, ../sass/_typography.scss */
+#nav ul li {
+  list-style: none;
+  float: left;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 100px;
+  line-height: 30px;
+  height: 30px;
+  border-right: solid 1px #ccc;
+}
+/* line 62, ../sass/_typography.scss */
+#nav ul li:hover {
+  background-color: #fb5;
+}
+/* line 65, ../sass/_typography.scss */
+#nav ul li a {
+  color: #ffffff;
+}
+/* line 68, ../sass/_typography.scss */
+#nav ul li.here {
+  background-color: #799;
+}
+/* line 72, ../sass/_typography.scss */
+#nav ul li:nth-child(1) {
+  margin-left: 50px;
+  border-left: solid 1px #cccccc;
+}
+
+/*主体内容*/
+/* line 78, ../sass/_typography.scss */
+#content > div {
+  width: 100%;
+  background-color: #eeddcc;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+/* line 83, ../sass/_typography.scss */
+#content > div h3 {
+  font-size: 40px;
+  line-height: 80px;
+  height: 80px;
+}
+/* line 88, ../sass/_typography.scss */
+#content > div .txt {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 30px;
+}
+/* line 93, ../sass/_typography.scss */
+#content > div .txt span a {
+  background-color: #eb6;
+}
+/* line 98, ../sass/_typography.scss */
+#content > div #slideShow {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  background: url("../../images/slideshow.gif") no-repeat;
+  background-position: 0 0;
+}
+
+/* line 107, ../sass/_typography.scss */
+footer {
+  padding-top: 10px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*about*/
+/* line 116, ../sass/_typography.scss */
+#members ul li {
+  list-style-type: disc;
+}
+/* line 118, ../sass/_typography.scss */
+#members ul li a {
+  color: #ffbe74;
+  text-decoration: none;
+}
+
+/*photos*/
+/* line 127, ../sass/_typography.scss */
+#name ul {
+  overflow: hidden;
+}
+/* line 129, ../sass/_typography.scss */
+#name ul li {
+  float: left;
+  margin-right: 2px;
+}
+/* line 134, ../sass/_typography.scss */
+#name p {
+  line-height: 30px;
+  height: 30px;
+}
+/* line 138, ../sass/_typography.scss */
+#name img {
+  display: block;
+  border: solid 1px #cccccc;
+}
+/* line 142, ../sass/_typography.scss */
+#name #placeholder {
+  display: block;
+  width: 400px;
+  height: 300px;
+  border: solid 1px #cccccc;
+}
+
+/*live*/
+/* line 151, ../sass/_typography.scss */
+#schedule tr {
+  height: 20px;
+  width: 450px;
+  background-color: #ffbe74;
+}
+/* line 155, ../sass/_typography.scss */
+#schedule tr:nth-child(2n) {
+  background-color: #eea927;
+}
+/* line 158, ../sass/_typography.scss */
+#schedule tr th {
+  color: #ffffff;
+  width: 150px;
+  background-color: #605f46;
+  text-align: center;
+  border: solid 2px #edc;
+  font-size: 16px;
+  text-overflow: ellipsis;
+}
+/* line 167, ../sass/_typography.scss */
+#schedule tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: solid 2px #edc;
+  width: 150px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 176, ../sass/_typography.scss */
+#schedule tr td :hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+/* line 182, ../sass/_typography.scss */
+#schedule .mouseoverColor {
+  background-color: rgba(23, 24, 25, 0.1) !important;
+}
